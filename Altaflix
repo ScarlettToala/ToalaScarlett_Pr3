@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBFLIX Peliculas</title>
+</head>
+<body>
+    <header>
+        <img alt=”logo de ITB” src=”itbflix.png”/>
+        <nav>
+            <li><a href=”#” target=”_blank”>Index.html</a></li>
+            <li><a href=”#” target=”_blank”>Peliculas.html</a></li>
+            <li><a href=”#” target=”_blank”>Series.html</a></li>
+            <li><a href=”#” target=”_blank”>Festivales.html</a></li>
+    </nav>
+    </header>  
+    
+</body>
+</html>
