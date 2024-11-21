@@ -1,47 +1,110 @@
-*{
-    background-color: lightcoral; 
+*{ 
     border: solid black;
 }
 
+a:link{
+    color: rgb(14, 169, 143); /*enlace no visitado*/
+}
+
+a:visited{
+color: rgb(144, 0, 0);
+}
+
+a:hover{
+    color: rgb(232, 23, 208);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral; 
+}
+
+p{
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Critter';
+}
+
+h2{
+text-align: center;
+font-style: oblique;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+/*Header*/
 
 header img{
     background-image: url(imagenes/ITBFLIXLOGO.png);
-    background-size: cover;
-    background-position: top;
+    justify-content: center;
     width: 25%;
-    height: 1%;
-    display: flex; justify-content: space-around; align-items: center;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
 }
- 
+
 
 nav li {  
     background-color: beige;
     display: inline-block;
     justify-content: space-around;
     text-align: center;
-    width: 24%;
-}
-
-.contenedorPeliculas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 17%;
     
 }
 
-.peliculas img{ 
-    width: 98%;
+h2{
+    text-align: center;
+    padding:20px;
+    background-color: beige;
+}
 
+/*******************        Peliculas         *****************/
+
+.peliculas{
+    align-content: center;
+    width: 100%;
+}
+
+.contenedorPeliculas{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.peliculas img{ 
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s linear;
+}
+
+.peliculas img:hover{
+    transform: scale(1.1);
 }
 
 h3{
 background-color: bisque;
+color: black;
 }
 
 .peliculas article{
-    margin: 15px;
+    margin: 1px;
 }
 
+.peliculas article p{
+    font-size: small;
+}
+/*************************     Actores  *************************/
+.actores {
+    background-color: black;
+
+}
+
+.actores p, h4{
+color: white;
+}
 
 .contenedorActores {
     display: flex;
@@ -52,23 +115,11 @@ background-color: bisque;
 
 .actores img{ 
     width: 90%;
-    height: 40%;
+    height: 50%;
     border-radius: 50%;
-
 }
 
-p{
-    text-align: justify;
-
-}
-
-h2{
-    text-align: center;
-    padding:20px ;
-    background-color: beige;
-}
-
-
+/*************** Festivales *******************/
 .contenedorFestivaliSeries{
     display: flex;
     flex-direction: row;
@@ -76,16 +127,92 @@ h2{
 }
 
 aside{
-    width: 45%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+    background-color: rgb(250, 255, 160);
 }
 
+aside img{
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/******************* Series ************/
 .ContenedorSeries{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
+    justify-content: space-between;
 }
 
 .Series{
     width: 70%;
 }
+
+.Series img{
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s linear;
+}
+
+.Series img:hover{
+    transform: scale(1.1);
+}
+
+h3{
+background-color: bisque;
+color: black;
+}
+
+.Series article{
+    width: 20%;
+}
+
+.Series article p{
+    font-size: small;
+}
+
+/******************* Lo más visto ******************/
+
+nav.lomasvisto{
+    width: 100%;
+    justify-items: center;
+}
+.lomasvisto{  
+    flex-direction: row;
+    background-color: rgb(240, 240, 205);
+}
+
+.lomasvisto p, h4{
+color: white;
+}
+
+.lomasvisto ul li{
+width: 100px;
+align-items: center;
+
+}
+.lomasvisto li a img{
+    width: 90px;
+    height: 80px;
+    
+}
+
+/******************* footer **************/
+
+footer p{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redesSociales img{
+    width: 25px;
+    height: 20px;
+    
+}
+
+

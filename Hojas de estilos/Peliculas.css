@@ -1,0 +1,80 @@
+*{ 
+    border: solid black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral; 
+}
+nav{
+    background-color: beige;
+}
+nav li {  
+    background-color: beige;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    width: 19%;
+
+}
+
+h1{
+    background-color:  bisque; 
+    text-align: center;
+    font-style: oblique;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Critter';
+}
+
+h3{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabezecera */
+header img{
+    background-image: url(imagenes/ITBFLIXLOGO.png);
+    justify-content: center;
+    width: 25%;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.contenedorPeliculas{ 
+    display: flex; /* Activa el modelo Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 60%; /* Ancho del contenedor */
+    border: 2px solid #ddd; /* Para visualizar el contenedor */
+}
+
+.contenedorPeliculas article img{
+    max-width: 100%; /* Escala la imagen para que no exceda el contenedor */
+    max-height: 100%; /* Escala la imagen en altura */
+}
+
+.peliculas img:hover{
+    transform: scale(1.1);
+}
+
+/* Footer*/
+footer p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redesSociales img{
+    width: 25px;
+    height: 20px;
+    
+}
