@@ -23,12 +23,16 @@ body{
 
 p{
     text-align: center;
-    justify-items: space-between;
+    justify-content: space-around;
     font-family: 'Critter';
-    font-style: italic;
 }
 
-
+h2{
+text-align: center;
+font-style: oblique;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+border: black solid;
+}
 /*Header*/
 
 header{
@@ -63,7 +67,6 @@ header{
 .navprincipal ul{
     list-style: none;
     display: flex;
-    flex-direction: row;
     padding: 0px;
     width: 100%;
     align-items: center;
@@ -73,8 +76,7 @@ header{
 .navprincipal ul li{
 list-style: none;
 display: inline-block;
-padding: 0%;
-width: 100px;
+padding: 12px;
 background-color: #d6005d6e;
 }
 
@@ -83,7 +85,6 @@ background-color: #d6005d6e;
     color: white;
     font-weight: bold;
     border-radius: 5px;
-    width: 100%;
     transition: 0.5s;
 }
 
@@ -93,9 +94,7 @@ background-color: #d6005d6e;
 
 .navprincipal ul{
     float: right;
-    margin-right: 0%;
-    justify-items: center;
-    align-content: center;
+    margin-right: 5%;
 }
 
 h1{
@@ -103,71 +102,71 @@ h1{
     text-align: center;
     font-style: oblique;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
 }
 
+h2{
+    text-align: center;
+    padding:20px;
+    background-color: #ec9e97;
+}
 
 h3{
     background-color: bisque;
     width: 100%;
     color: black;
     text-align: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
     font-family:'Courier New', Courier, monospace;
 }
-/************************* pelicula **************/
 
-.pelicula{
-    display: flex;
-    flex-direction: column;
+/*********************** formulario *******************************/
+.formulario{
+    width: 400px;
+    background-color: #f78794;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
 }
 
-.pelicula h3{
-    background-color: #d6005d;
-    font-size: xx-large;
-    font-weight: bold;
-    padding-top: 5%;
-    display: flex;
-    flex-direction: row;
-    color: aliceblue;
-}
-
-.contenedorPeliculas{ 
-    display: flex; /* Activa el modelo Flexbox */
-    flex-direction: row;
-    justify-content: center; 
-    align-items: center;
-    width: 100%; 
-    border: 2px solid #ddd; 
-}
-
-.contenedorPeliculas article{ 
-    display: flex; /* Activa el modelo Flexbox */
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    width: 100%; 
-    border: 2px solid #ddd; 
-}
-
-.contenedorPeliculas article img{
-    height: 80%;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-}
-
-article p{
-    text-align: center;
-    font-size: medium;
-    width: 70%;
+.controls{
+    width: 100%;
+    background: #f5e0e9;
     padding: 10px;
-    border: rgba(250, 128, 114, 0.4) solid;
-    border-radius: 10px;
-    border-style: dotted;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    font-size: 18 px;
 }
-/******************** Footer **********************/
+
+.formulario p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario a{
+color: white;
+text-decoration: none;
+}
+
+.formulario a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.formulario .botons{
+    width: 100%;
+    border: none;
+    background: #f78794;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+/*********************** Footer *************************/
 footer{
     display: flex;
     justify-content:space-around;

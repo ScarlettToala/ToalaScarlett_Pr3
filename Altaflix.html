@@ -3,18 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITBFLIX Festivales</title>
+    <title>Altaflix</title>
+    <link rel="stylesheet" href="Hojas de estilos/AltaFlix.css">
 </head>
-<main>
+<body>
+
     <header>
-       <img src="imagenes/itbflix.png" alt="logo de ITB">
-       <nav>
-             <a href="Index.html" target="_blank">Home</a>
-             <a href="Peliculas.html" target=”_blank”>Peliculas</a>
-             <a href="Series.html" target="_blank">Series</a>
-             <a href="Festivales.html" target=”_blank”>Festivales</a>
-       </nav>
-    </header>
-</main>
+        <h1>Home</h1>
+        <div class="menu">
+        <img src="imagenes/itblogo.png" alt="logo de la empresa">
+
+        <nav class="navprincipal">
+
+           <ul>
+            <li><a href="Index.html" target="_blank">Home</a></li>
+            <li><a href="Peliculas.html" target="_blank">Peliculas</a></li>
+            <li><a href="Peliculas.html" target="_blank">Series</a></li>
+            <li><a href="Peliculas.html" target="_blank">Festivales</a></li>
+            <li><a href="Peliculas.html" target="_blank">Lo más vito</a></li>
+           </ul>
+        </nav>
+     </div>
+     </header>
+    <section class="formulario">
+        <form method="get">
+        <label for="nombre">Nombre:</label>
+        <input class="controls" type="text" name="nombre" id="nombre" required="nombre" placeholder="Ingrese su nombre">
+
+        <label for="apellido">Apellidos:</label>
+        <input class="controls" type="text" name="apellido" id="apellido" requires="apellido" placeholder="Ingrese sus apellido">
+
+        <label for="fechadenacimiento">Fecha de nacimiento:</label>
+        <input class="controls" type="date" name="fechadenacimiento" id="fechadenacimiento" required="fechadenacimiento" placeholder="Ingrese su fecha de nacimiento">
+
+        <label for="movil">Móvil:</label>
+        <input type="checkbox" name="movil" id="movil">
+        <label for="telefono">Telefono Fijo:</label>
+        <input type="checkbox" name="telefono" id="telefono">
+        <input class="controls" type="tel" name="movil" id="movil" placeholder="Ingrese su número de móvil">
+        <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su número de telefono fijo">
+
+        <label for="email">Email:</label>
+        <input class="controls" type="text" name="email" id="email" required="email" placeholder="Ingrese su correo">
+
+        <label for="contrasenya">Contraseña:</label>
+        <input class="controls" type="text" name="apellido" id="apellido" requires="apellido" placeholder="Ingrese sus apellido">
+
+        <label for="color">Elige un color para su perfil:</label>
+        <input type="color" name="color" id="color">
+
+        <input type="reset" name="Borrar" id="Borrar">
+        <input class="submit" type="submit" value="Registrar">
+        </form>
+        <p><a href="#">Ya tengo cuenta?</a></p>
+    </section>
+
+<footer class="footer">
+    <ul class="iconoRedSocial">
+    <li class="icon-elem">
+        <a href="" class="icon"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>  
+            <li class="icon-elem">
+            <a href="" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>  
+            <li class="icon-elem">
+            <a href="" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>   
+    </ul>
+    <address>
+        Carrer d'Aiguablava 121
+        08033 Barcelona
+    </address>
+    <p>&copycopyright 2024-2024</p>
+    </footer>
+</body>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <p id="copy">&copy; 2024 ITBFLIX. Todos los derechos reservados</p>
 </body>
 </html>
