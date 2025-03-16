@@ -34,7 +34,6 @@ include("headerIndexHtml.html");
          </div>
 
    </section>
-
    <?php include("footer.html") ?>
 </body>
 </html>
