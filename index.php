@@ -1,7 +1,6 @@
 <?php
 include("headerIndexHtml.html");
 ?>
-
 <body>
       <header>
          <h1>Home</h1>
